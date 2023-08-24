@@ -27,9 +27,9 @@ Iniciamos um PortScan com `nmap -A [IP]` no HOST:
 
 O site contém 2 botões “**A dog”** e “**A cat**”, e o código-fonte aparentemente executa um arquivo PHP de acordo com o botão pressionado.
 
-![Captura de tela de 2023-06-28 21-06-49.png](https://file.notion.so/f/s/822c0c84-71d3-4167-ae05-949b5d893bca/Captura_de_tela_de_2023-06-28_21-06-49.png?id=c8c28ef5-7baa-4332-a5d7-45f7bedae254&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=vxJZf2m2l7N7St86VxIkzABKBMvbxeQVKc9vhgSp_Gs&downloadName=Captura+de+tela+de+2023-06-28+21-06-49.png)
+![Captura de tela de 2023-06-28 21-06-49.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F913816dc-a55e-46bb-835b-98bfc645b5ad%2FCaptura_de_tela_de_2023-06-28_21-08-21.png?table=block&id=3d4dc508-7262-4f73-be26-6e15ca6eefb4&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1870&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
-![Captura de tela de 2023-06-28 21-08-21.png](https://file.notion.so/f/s/913816dc-a55e-46bb-835b-98bfc645b5ad/Captura_de_tela_de_2023-06-28_21-08-21.png?id=3d4dc508-7262-4f73-be26-6e15ca6eefb4&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=7moQjSFfR5ZpKYrpv4HfuO_K50rGtLjfjO6gOmHrHKg&downloadName=Captura+de+tela+de+2023-06-28+21-08-21.png)
+![Captura de tela de 2023-06-28 21-08-21.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F913816dc-a55e-46bb-835b-98bfc645b5ad%2FCaptura_de_tela_de_2023-06-28_21-08-21.png?table=block&id=3d4dc508-7262-4f73-be26-6e15ca6eefb4&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1870&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Nesse caso podemos fazer um “teste” PHP adicionando um carácter no ***`/?view=dog`***
 
