@@ -33,7 +33,7 @@ O site contém 2 botões “**A dog”** e “**A cat**”, e o código-fonte ap
 
 Nesse caso podemos fazer um “teste” PHP adicionando um carácter no ***`/?view=dog`***
 
-![Captura de tela de 2023-06-28 21-11-11.png](https://file.notion.so/f/s/ea73b92c-85a6-4ccb-9f55-95f28ec670a7/Captura_de_tela_de_2023-06-28_21-11-11.png?id=e3bb71c1-6020-4e85-a28f-6c7ad482ba91&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=Fafoz6dAZtpHKPSgEAPVz4PJEAYXp4VMah59eHXVMAM&downloadName=Captura+de+tela+de+2023-06-28+21-11-11.png)
+![Captura de tela de 2023-06-28 21-11-11.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fea73b92c-85a6-4ccb-9f55-95f28ec670a7%2FCaptura_de_tela_de_2023-06-28_21-11-11.png?table=block&id=e3bb71c1-6020-4e85-a28f-6c7ad482ba91&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1690&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Como esperado ele diz não poder encontrar o arquivo ***dog*.php*** para executar a função *`include()`.*
 
@@ -45,9 +45,9 @@ Aqui podemos esperar um possível RCE. Podemos usar a URL para navegar e executa
 
 No caso do ***`index.php` ,***durante a requisição ele espera alguma constante a ser declarada.
 
-![Captura de tela de 2023-06-28 21-23-27.png](https://file.notion.so/f/s/10819adb-773c-4b9f-85c5-8c0572132cc3/Captura_de_tela_de_2023-06-28_21-23-27.png?id=1ce05873-9af0-45ea-946c-b3b1f8c3125e&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=GWvz-qH4lcICrYvYaESIPKW6jOFKAB64rAu54k_TUYw&downloadName=Captura+de+tela+de+2023-06-28+21-23-27.png)
+![Captura de tela de 2023-06-28 21-23-27.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F10819adb-773c-4b9f-85c5-8c0572132cc3%2FCaptura_de_tela_de_2023-06-28_21-23-27.png?table=block&id=1ce05873-9af0-45ea-946c-b3b1f8c3125e&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1620&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
-![Captura de tela de 2023-06-28 21-23-36.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-23-36.png)
+![Captura de tela de 2023-06-28 21-23-36.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8abcda3f-5a59-4f0c-8326-21de5c8da8b5%2FCaptura_de_tela_de_2023-06-28_21-23-36.png?table=block&id=3b85ab11-b009-46f4-baf8-189bd7d83e78&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1620&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Sabemos que conseguimos executar arquivos .php em `/var/www/html/` , sendo assim podemos tentar fazer a leitura de alguns arquivos do sistema/servidor.
 
@@ -99,7 +99,7 @@ No trecho `$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.php';` podemos ver que 
 
 ---
 
-![Captura de tela de 2023-06-28 22-11-09.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_22-11-09.png)
+![Captura de tela de 2023-06-28 22-11-09.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9149f378-f263-4694-b582-b905bb56432c%2FCaptura_de_tela_de_2023-06-28_22-11-09.png?table=block&id=7db1a7a1-809c-4698-84bc-4606747bbd60&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1620&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
@@ -112,13 +112,13 @@ Em primeiro lugar, sabemos que o serviço WEB que roda neste host é um **Apache
 
 ---
 
-![Captura de tela de 2023-06-28 22-40-58.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_22-40-58.png)
+![Captura de tela de 2023-06-28 22-40-58.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb7bc6b75-4dda-4d6b-b5f9-cac9328b6208%2FCaptura_de_tela_de_2023-06-28_22-40-58.png?table=block&id=deda7b78-f06d-4cdc-b611-cd6f238a676e&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1620&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
 Agora podemos testar o log, dando um comando qualquer em `?view=` . Neste caso digitei **ls -la** e observando o código-fonte da página, podemos ver uma nova requisição armazenada no `access.log` .
 
-![Captura de tela de 2023-06-29 19-58-33.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_19-58-33.png)
+![Captura de tela de 2023-06-29 19-58-33.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F871b94d0-cacd-4fc2-9993-89f683640da0%2FCaptura_de_tela_de_2023-06-29_19-58-33.png?table=block&id=d0cf7f72-840f-4e71-a541-0b4fb0e27407&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=2000&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 O log armazena IP, DT/HR, o tipo de requisição, caminho, e o **UserAgent**. Aqui podemos injetar um arquivo PHP malicioso para obtermos uma SHELL Reversa. ([link](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php))
 
