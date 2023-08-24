@@ -23,7 +23,7 @@ Resolução da Room DogCat - TryHackMe.
 
 Iniciamos um PortScan com `nmap -A [IP]` no HOST:
 
-![Captura de tela de 2023-06-28 21-03-29.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-03-29.png)
+![Captura de tela de 2023-06-28 21-03-29.png](https://www.notion.so/maarckz/TryHackMe-DogCat-eafaeda6ff944b2c8408269d0b76c9a4?pvs=4#66e67b11e3084770b1d546bbe43a1460)
 
 O site contém 2 botões “**A dog”** e “**A cat**”, e o código-fonte aparentemente executa um arquivo PHP de acordo com o botão pressionado.
 
