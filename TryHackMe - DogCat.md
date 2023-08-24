@@ -23,7 +23,7 @@ Resolução da Room DogCat - TryHackMe.
 
 Iniciamos um PortScan com `nmap -A [IP]` no HOST:
 
-![Captura de tela de 2023-06-28 21-03-29.png]([https://www.notion.so/maarckz/TryHackMe-DogCat-eafaeda6ff944b2c8408269d0b76c9a4?pvs=4#66e67b11e3084770b1d546bbe43a1460](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F169bdeda-d689-4b77-a7d6-cb9103324a11%2FCaptura_de_tela_de_2023-06-28_21-03-29.png?table=block&id=66e67b11-e308-4770-b1d5-46bbe43a1460&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&width=1520&userId=c637e524-e130-478b-8aab-e7badc4ed67a&cache=v2))
+![Captura de tela de 2023-06-28 21-03-29.png](https://file.notion.so/f/s/169bdeda-d689-4b77-a7d6-cb9103324a11/Captura_de_tela_de_2023-06-28_21-03-29.png?id=66e67b11-e308-4770-b1d5-46bbe43a1460&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=eOxu-Df8ugVTIgGMzYsiUfzjNwbXkKlElfJZXa-G65I&downloadName=Captura+de+tela+de+2023-06-28+21-03-29.png)
 
 O site contém 2 botões “**A dog”** e “**A cat**”, e o código-fonte aparentemente executa um arquivo PHP de acordo com o botão pressionado.
 
