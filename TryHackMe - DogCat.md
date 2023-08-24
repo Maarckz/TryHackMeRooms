@@ -27,13 +27,13 @@ Iniciamos um PortScan com `nmap -A [IP]` no HOST:
 
 O site contém 2 botões “**A dog”** e “**A cat**”, e o código-fonte aparentemente executa um arquivo PHP de acordo com o botão pressionado.
 
-![Captura de tela de 2023-06-28 21-06-49.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-06-49.png)
+![Captura de tela de 2023-06-28 21-06-49.png](https://file.notion.so/f/s/822c0c84-71d3-4167-ae05-949b5d893bca/Captura_de_tela_de_2023-06-28_21-06-49.png?id=c8c28ef5-7baa-4332-a5d7-45f7bedae254&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=vxJZf2m2l7N7St86VxIkzABKBMvbxeQVKc9vhgSp_Gs&downloadName=Captura+de+tela+de+2023-06-28+21-06-49.png)
 
-![Captura de tela de 2023-06-28 21-08-21.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-08-21.png)
+![Captura de tela de 2023-06-28 21-08-21.png](https://file.notion.so/f/s/913816dc-a55e-46bb-835b-98bfc645b5ad/Captura_de_tela_de_2023-06-28_21-08-21.png?id=3d4dc508-7262-4f73-be26-6e15ca6eefb4&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=7moQjSFfR5ZpKYrpv4HfuO_K50rGtLjfjO6gOmHrHKg&downloadName=Captura+de+tela+de+2023-06-28+21-08-21.png)
 
 Nesse caso podemos fazer um “teste” PHP adicionando um carácter no ***`/?view=dog`***
 
-![Captura de tela de 2023-06-28 21-11-11.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-11-11.png)
+![Captura de tela de 2023-06-28 21-11-11.png](https://file.notion.so/f/s/ea73b92c-85a6-4ccb-9f55-95f28ec670a7/Captura_de_tela_de_2023-06-28_21-11-11.png?id=e3bb71c1-6020-4e85-a28f-6c7ad482ba91&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=Fafoz6dAZtpHKPSgEAPVz4PJEAYXp4VMah59eHXVMAM&downloadName=Captura+de+tela+de+2023-06-28+21-11-11.png)
 
 Como esperado ele diz não poder encontrar o arquivo ***dog*.php*** para executar a função *`include()`.*
 
@@ -45,7 +45,7 @@ Aqui podemos esperar um possível RCE. Podemos usar a URL para navegar e executa
 
 No caso do ***`index.php` ,***durante a requisição ele espera alguma constante a ser declarada.
 
-![Captura de tela de 2023-06-28 21-23-27.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-23-27.png)
+![Captura de tela de 2023-06-28 21-23-27.png](https://file.notion.so/f/s/10819adb-773c-4b9f-85c5-8c0572132cc3/Captura_de_tela_de_2023-06-28_21-23-27.png?id=1ce05873-9af0-45ea-946c-b3b1f8c3125e&table=block&spaceId=254b86ca-c25a-482f-bb36-3ae97ba31c84&expirationTimestamp=1692972000000&signature=GWvz-qH4lcICrYvYaESIPKW6jOFKAB64rAu54k_TUYw&downloadName=Captura+de+tela+de+2023-06-28+21-23-27.png)
 
 ![Captura de tela de 2023-06-28 21-23-36.png](TryHackMe%20-%20DogCat%20eafaeda6ff944b2c8408269d0b76c9a4/Captura_de_tela_de_2023-06-28_21-23-36.png)
 
